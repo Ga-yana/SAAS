@@ -7,7 +7,7 @@ By Ga-yana
 
 ## A static homepage for SAAS webpage.
 
-### Click [here]() to see it live
+### Click [here](saaspages.netlify.app) to see it live
 
 ![Homepage](./Images/Screenshot%202022-08-05%20at%209.20.42%20PM.png)
 
