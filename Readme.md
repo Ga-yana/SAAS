@@ -6,6 +6,7 @@ By Ga-yana
 #
 
 ## A static homepage for SAAS webpage.
+Tablet and mobile(at 425px) responsive too.
 
 ### Click [here](https://saaspages.netlify.app/) to see it live
 

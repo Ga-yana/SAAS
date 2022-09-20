@@ -11,21 +11,34 @@ body{
 
 .top{
     background-color: #7030CB;
-    height: 90vh;
+    height: 92vh;
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 12vh;
-    justify-content: space-around;
-  
+    padding-top: 25px;
+    justify-content: space-between;
+    gap: 150px;
+    margin: 0 130px 0 130px;
+    /* display: none; */
+}
+
+.another-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.nav-item:hover{
+    color: #31bcdf;
 }
 
 .logo-top img{
     width: 100px;
-    margin-left: 50px;
 }
 
 .nav-lists{
@@ -34,7 +47,7 @@ body{
     list-style: none;
     gap: 60px;
     color: #ffffff;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 .btn{
     background-color:#23BCEF;
@@ -43,14 +56,14 @@ body{
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
-    margin-right: 100px;
 }
 
 .flex-1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+   align-items: center;
+   margin: 0 90px 0 90px;
 }
 
 .flex-1-right img{
@@ -58,9 +71,7 @@ body{
    
 }
 .flex-1-left{
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 110px;
+    max-width: 500px;
 }
 .head-1{
     font-size: 58px;
@@ -132,16 +143,16 @@ margin-top: 25px;
     width: 50px;
 }
 .flex-3{
-    margin: 70px 130px 0px 130px;
-    display: flex;
-    flex-direction: row;
-justify-content: center;
-gap: 25px;
-height: 350px;
+    margin: 70px 200px 0px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 50px;
+    /* height: 350px; */
 }
 .feature{
-    width: 220px;
-    height: 280px;
+    /* width: 220px;
+    height: 280px; */
     border-radius: 30px;
     box-shadow: 4px 4px 5px  rgb(184, 183, 183);
     display: flex;
@@ -154,11 +165,32 @@ height: 350px;
     height: 100px;
     border-radius: 50%;
     margin-top: 20px;
+    margin-bottom: 15px;
+}
+.feature-line{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius:30px ;
+}
+.feature:hover>.feature-line, .feature:hover>.feature-line-1, .feature:hover>.feature-line-2{
+    background-color: #7030CB;
+    color: #ffffff;
+}
+.feature-line-1{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.feature-line-2{
+    margin-left: 20px;
+    text-align: center;
+    margin: 20px 0 20px 0;
 }
 .portray{
     margin-left: 23px;
     margin-top: 23px;
 }
+
 .back-1{
     background-color: #F9EBEB;
 }
@@ -171,4 +203,123 @@ height: 350px;
 .back-4{
     background-color: #F2E7F5;
 }
+
+@media screen and (max-width:768px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 25px;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 0 50px 0 50px;
+    }
+    .another-flex{
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .top{
+        height: 550px;
+    }
+    .nav-lists{
+        gap: 15px;
+        font-size: 15px;
+        padding-top:10px ;
+    }
+    .btn{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    .flex-1{
+        margin:50px 50px 0 50px ;
+    }
+    .flex-1-right img{
+       width: 380px;
+    }
+    .flex-1-left{
+        margin-left: 0;
+    }
+    .head-1{
+        font-size: 33px;
+        max-width: 280px;
+    }
+    .line-1{
+        max-width: 280px;
+    }
+    .flex-2{
+        margin: 0px 50px 0 50px;
+        align-items: center;
+    }
+    .flex-2-left img{
+        width: 360px;
+        margin-top: 50px;
+    }
+    .head-2{
+        font-size: 28px;
+        text-align: center;
+    }
+    .single-line{
+        font-size: 31px;
+    }
+    .flex-3{
+        margin: 70px 50px 0 50px;
+    }
+    .feature-line-1{
+        font-size: 18px;
+    }
+    .feature-line-2{
+        font-size: 15px;
+        padding: 0 7px 0 7px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .nav-lists{
+        display: none;
+    }
+    .flex-1{
+        margin: 50px 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        height: 650px;
+    }
+    .flex-1-left{
+    }
+    .head-1, .line-1{
+        text-align: center;
+
+    }
+   
+    .flex-2{
+    margin: 80px 50px 0 50px;
+    flex-direction: column-reverse;
+
+    }
+    .head-2{
+       margin: 0 30px;
+    }
+    .flex-2-right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .points{
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px 0 50px;
+    }
+    .topic{
+        font-size: 21px;
+    }
+    .flex-3{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
 
